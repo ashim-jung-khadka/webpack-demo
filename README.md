@@ -1,14 +1,12 @@
-# webpack-demo
-This webpack-demo is sample some basic things.
+# webpack-template
+This webpack-template is sample some basic things.
 
-## It contains following feature which can be helpfull for startup project:
+## It contains following dependecies:
 	- webpack config file
 	- webpack dev server
 	- es2015
 	- css loader
 	- sass loader
-
-## Help Line
 
 ### Webpack Install
 	- npm install webpack --save-dev --global webpack
