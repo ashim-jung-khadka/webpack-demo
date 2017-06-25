@@ -1,7 +1,7 @@
 # webpack-template
 This webpack-template is sample some basic things.
 
-## It contains following dependecies:
+## It contains following dependencies:
 	- webpack config file
 	- webpack dev server
 	- es2015
