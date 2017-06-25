@@ -1,36 +1,32 @@
+var webpack = require('webpack');
+
 module.exports = {
-
-	// define entry point
-	entry: './src/script-1.js',
-
-	// define output point
-	output: {
-		path: __dirname + '/dist',
-		filename: 'bundle.js'
-	},
-
-	// dev server
-	// devServer: {
-	// 	inline: true,
-	// 	// contentBase: 'www',
-	// 	port: 3000
-	// },
-
-	// Load module
-	module: {
-		loaders: [
-			{
-				test: /\.js$/,
-				exclude: /(node_modules)/,
-				loader: 'babel-loader',
-				query: {
-					presets: ['es2015']
-				}
-			},
-			{
-				test: /\.scss$/,
-				loader: 'style-loader!css-loader!sass-loader'
-			}
-		]
-	}
-};
+  entry: {
+    Template: ['./src/js/index.js'],
+  },
+  output: {
+    path: __dirname + "/build",
+    filename: 'bundle.[name].js',
+    libraryTarget: 'var',
+    library: ["[name]"],
+    publicPath: '/build'
+  },
+  module: {
+    loaders: [{
+      loader: 'babel-loader',
+      test: /\.js$/,
+      exclude: /node_modules/,
+      query: {
+        presets: ['es2015']
+      }
+    }, {
+      test: /\.scss$/,
+      loader: 'style-loader!css-loader!sass-loader'
+    }]
+  },
+  devServer: {
+    port: 3000,
+    inline: true
+  },
+  // plugins: [new webpack.optimize.UglifyJsPlugin()]
+}

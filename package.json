@@ -1,14 +1,15 @@
 {
-  "name": "webpack-demo",
-  "version": "1.0.0",
-  "description": "webpack-demo",
+  "name": "webpack-template",
+  "version": "2.0.0",
+  "description": "webpack-template",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack",
+    "start": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ashim-jung-khadka/webpack-demo.git"
+    "url": "git+https://github.com/ashim-jung-khadka/webpack-template.git"
   },
   "keywords": [
     "webpack"
@@ -16,9 +17,9 @@
   "author": "Ashim Jung Khadka",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ashim-jung-khadka/webpack-demo/issues"
+    "url": "https://github.com/ashim-jung-khadka/webpack-template/issues"
   },
-  "homepage": "https://github.com/ashim-jung-khadka/webpack-demo#readme",
+  "homepage": "https://github.com/ashim-jung-khadka/webpack-template#readme",
   "devDependencies": {
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
@@ -27,6 +28,7 @@
     "node-sass": "^4.5.2",
     "sass-loader": "^6.0.3",
     "style-loader": "^0.16.1",
-    "webpack": "^2.4.1"
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.5.0"
   }
 }
