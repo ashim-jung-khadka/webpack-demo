@@ -22,6 +22,14 @@ module.exports = {
     }, {
       test: /\.scss$/,
       loader: 'style-loader!css-loader!sass-loader'
+    }, {
+      test: /\.hbs$/,
+      use: [{
+        loader: "handlebars-loader",
+        options: {
+          helperDirs: __dirname + "/src/js/helpers"
+        }
+      }]
     }]
   },
   devServer: {
