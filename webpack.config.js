@@ -10,11 +10,11 @@ module.exports = {
 	},
 
 	// dev server
-	// devServer: {
-	// 	inline: true,
-	// 	// contentBase: 'www',
-	// 	port: 3000
-	// },
+	devServer: {
+		inline: true,
+		contentBase: __dirname,
+		port: 3000
+	},
 
 	// Load module
 	module: {
